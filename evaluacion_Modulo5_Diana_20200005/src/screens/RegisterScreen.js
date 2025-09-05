@@ -87,7 +87,8 @@ export default function RegisterScreen({ navigation }) {
             Alert.alert(
                 'Éxito',
                 'Usuario registrado correctamente',
-                [{ text: 'OK', onPress: () => navigation.navigate('Login') }]
+                // Eliminamos la navegación manual
+                [{ text: 'OK' }]
             );
         } catch (error) {
             console.error('Error en registro: ', error);
